@@ -12,6 +12,7 @@ function hasTargetSum(array, target) {
   })
   const shouldMatchTargetArr = array2.filter(el2 => el2 === target)
   const targetArr = [target]
-  return targetArr[0] === shouldMatchTargetArr[0] ? true : false
+  return targetArr[0] === shouldMatchTargetArr[0]
 }
-hasTargetSum([1, 2, 3, 4], 5)
+console.log(hasTargetSum([3, 8, 12, 4, 11, 7], 10))
+console.log(hasTargetSum([22, 19, 4, 6, 30], 25))
